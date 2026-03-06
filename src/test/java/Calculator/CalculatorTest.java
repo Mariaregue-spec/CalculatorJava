@@ -64,6 +64,11 @@ import static org.junit.jupiter.api.Assertions.*;
             double result = calculator.divide(-6.0, 2.0);
             assertEquals(-3.0, result);
         }
-
+        @Test
+        void testDivideByZero() {
+            Calculator calculator = new Calculator();
+            double result = calculator.divide(5.0, 0.0);
+            assertTrue(Double.isInfinite(result));
+        }
     }
 
