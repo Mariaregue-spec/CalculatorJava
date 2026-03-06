@@ -35,6 +35,16 @@ class CalculatorTest {
     void testSubtract(double a, double b, double expected) {
         assertEquals(expected, calculator.subtract(a, b));
     }
+
+    @ParameterizedTest(name = "{0} * {1} = {2}")
+    @CsvSource({
+            "2.5, 2.0, 5.0",
+            "-2.0, 3.0, -6.0",
+            "5.5, 0.0, 0.0"
+    })
+    void testMultiply(double a, double b, double expected) {
+        assertEquals(expected, calculator.multiply(a, b));
+    }
 }
 //        @Test
 //        void testSubtractWithDecimals() {
