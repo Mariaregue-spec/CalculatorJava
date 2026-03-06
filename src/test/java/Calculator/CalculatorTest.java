@@ -51,5 +51,19 @@ import static org.junit.jupiter.api.Assertions.*;
             double result = calculator.multiply(5.5, 0);
             assertEquals(0.0, result);
         }
+        @Test
+        void testDivideWithDecimals() {
+            Calculator calculator = new Calculator();
+            double result = calculator.divide(7.0, 2.0);
+            assertEquals(3.5, result);
+        }
+
+        @Test
+        void testDivideNegativeResult() {
+            Calculator calculator = new Calculator();
+            double result = calculator.divide(-6.0, 2.0);
+            assertEquals(-3.0, result);
+        }
+
     }
 
