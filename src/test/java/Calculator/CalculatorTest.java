@@ -7,11 +7,19 @@ import static org.junit.jupiter.api.Assertions.*;
     class CalculatorTest {
 
         @Test
-        void testSumar() {
+        void testAddWithDecimals() {
             Calculator calculator = new Calculator();
-            int resultado = calculator.sumar(2,3);
-            assertEquals(5, resultado);
+            double result = calculator.add(2.5, 3.5);
+            assertEquals(6.0, result);
         }
+
+        @Test
+        void testAddNegativeResult() {
+            Calculator calculator = new Calculator();
+            double result = calculator.add(-5.5, 2.0);
+            assertEquals(-3.5, result);
+        }
+
 
     }
 
