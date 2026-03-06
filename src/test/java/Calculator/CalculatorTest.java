@@ -19,7 +19,37 @@ import static org.junit.jupiter.api.Assertions.*;
             double result = calculator.add(-5.5, 2.0);
             assertEquals(-3.5, result);
         }
+        @Test
+        void testSubtractWithDecimals() {
+            Calculator calculator = new Calculator();
+            double result = calculator.subtract(5.5, 2.0);
+            assertEquals(3.5, result);
+        }
 
+        @Test
+        void testSubtractNegativeResult() {
+            Calculator calculator = new Calculator();
+            double result = calculator.subtract(2.0, 5.5);
+            assertEquals(-3.5, result);
+        }
+        @Test
+        void testMultiplyWithDecimals() {
+            Calculator calculator = new Calculator();
+            double result = calculator.multiply(2.5, 2.0);
+            assertEquals(5.0, result);
+        }
 
+        @Test
+        void testMultiplyNegativeResult() {
+            Calculator calculator = new Calculator();
+            double result = calculator.multiply(-2.0, 3.0);
+            assertEquals(-6.0, result);
+        }
+        @Test
+        void testMultiplyByZero() {
+            Calculator calculator = new Calculator();
+            double result = calculator.multiply(5.5, 0);
+            assertEquals(0.0, result);
+        }
     }
 
