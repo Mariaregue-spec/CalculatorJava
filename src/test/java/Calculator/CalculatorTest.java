@@ -54,6 +54,11 @@ class CalculatorTest {
     void testDivide(double a, double b, double expected) {
         assertEquals(expected, calculator.divide(a, b));
     }
+    @Test
+    void testDivideByZero() {
+        assertThrows(IllegalArgumentException.class,
+                () -> calculator.divide(5.0, 0.0));
+    }
 }
 //        @Test
 //        void testSubtractWithDecimals() {
