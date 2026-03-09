@@ -64,8 +64,8 @@ Ejecutar Main.java
 
 ---
 
-## 🧪 Ejemplo de salida
-
+### 🧪 Ejemplo de salida
+```text
 ==============================
 ➕ CASOS DE SUMA
 ==============================
@@ -99,29 +99,29 @@ Ejecutar Main.java
 ==============================
 5.0 / 0.0 -> Error: Cannot divide by zero
 
----
-🧪 Tests
+```
 
-Todos los métodos han sido probados usando JUnit 5 con ParameterizedTest.
+---
+## 🧪 Tests
+
+Todos los métodos han sido probados usando **JUnit 5 con ParameterizedTest**.
 
 Casos probados:
 
-Números positivos
+- Números positivos
+- Números negativos
+- Números decimales
+- Multiplicación por cero
+- División por cero
 
-Números negativos
-
-Números decimales
-
-Multiplicación por cero
-
-División por cero
-
-✅ Resultado de los tests
+### ✅ Resultado de los tests
 
 Añadir captura de pantalla aquí:
 
-![Tests](images/tests.png)
-🧠 Proceso TDD
+<img width="391" height="426" alt="Captura de pantalla 2026-03-09 090153" src="https://github.com/user-attachments/assets/4d34f391-5984-49a7-a260-d29d7db0054e" />
+---
+
+## 🧠 Proceso TDD
 
 Pasos seguidos:
 
@@ -137,17 +137,24 @@ Refactorizar
 
 Todos los métodos se han creado siguiendo TDD.
 
-📌 Características
+## 📌 Características
 
 ✔ Código limpio
+
 ✔ Tests parametrizados
+
 ✔ Control de excepciones
+
 ✔ Proyecto Maven
+
 ✔ Uso de TDD
+
 ✔ Principios SOLID
+
 ✔ Salida por consola
 
-🧱 Principios SOLID
+## 🧱 Principios SOLID
+
 S — Single Responsibility Principle
 
 La clase Calculator solo tiene una responsabilidad:
@@ -190,10 +197,12 @@ D — Dependency Inversion Principle
 No necesario en este proyecto,
 pero el código es fácil de extender.
 
-👩‍💻 Autor
+---
+
+## 👩‍💻 Autor
 
 Mariaregue-spec
 
 GitHub:
-
 https://github.com/Mariaregue-spec
+
