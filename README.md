@@ -2,8 +2,8 @@
 
 🌐 Language / Idioma
 
-- 🇪🇸 Español → [README_es.md](README_es.md)
-- 🇬🇧 English → [README_en.md](README_en.md)
+- 🇪🇸 Español → [README_es.md](Readme_es.md)
+- 🇬🇧 English → [README_en.md](Readme_en.md)
 
 ---
 
